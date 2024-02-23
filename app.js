@@ -6,13 +6,13 @@ const moon = document.querySelector('#moon')
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("hidden")
-  hamburger.classList.toggle("bg-white")
+  hamburger.classList.toggle("dark")
 })
 
 hLinks.forEach(link => {
   link.addEventListener("click", () => {
     menu.classList.toggle("hidden")
-    hamburger.classList.toggle("bg-white")
+    hamburger.classList.toggle("dark")
   })
 })
 
