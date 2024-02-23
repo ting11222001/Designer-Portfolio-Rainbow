@@ -13,11 +13,11 @@
 
 <body class="font-nunito">
   <!-- Intro Section -->
-  <!-- relative for the woman.png -->
+  <!-- relative & overflow-hidden for the woman.png -->
   <div class="h-1/2 lg:h-screen bg-gradient-to-t from-rose-200 relative overflow-hidden"> 
     <!-- Navbar -->
     <nav class="w-full fixed top-0 bg-white z-10">
-      <div class="container mx-auto py-5 flex justify-between items-center">
+      <div class="container mx-auto py-5 flex justify-between items-center pr-2">
         <div class="flex items-center gap-2 pl-2">
           <img class="w-8" src="./img/logo.png" alt="">
           <span class="text-2xl font-bold text-rose-900">Portwind.</span>
@@ -41,7 +41,7 @@
         </ul>
         <img src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
         <!-- Hamburger Menu -->
-        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20 pr-2">
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
@@ -68,17 +68,18 @@
         </ul>
       </div>
     </nav>
+    
     <!-- Intro Content -->
-    <!-- image -->
-    <img class="absolute right-0 bottom-0 h-5/6 object-cover lg:left-0 mx-auto" src="./img/woman2.png" alt="">
-    <!-- circle -->
+    <!-- Image -->
+    <img class="absolute right-0 bottom-0 h-5/6 object-cover lg:left-0 mx-auto" src="./img/woman.png" alt="">
+    <!-- Circle -->
     <div class="hidden lg:block absolute -bottom-1/3 right-0 left-0 mx-auto w-big h-big bg-rose-900 rounded-full -z-10"></div>
-    <!-- animated text -->
+    <!-- Animated text -->
     <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 font-bold">
       <span class="text-gray-600">Freelance</span>
       <p id="developer-intro" class="text-rose-700"></p>
     </div>
-    <!-- texts -->
+    <!-- Intro Texts -->
     <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
       <h1 class="text-4xl font-bold text-rose-900">Hi, I'm Anna</h1>
       <p class="text-gray-400">
@@ -87,6 +88,45 @@
       <a class="bg-rose-700 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire Me</a>
     </div>
   </div>
+
+  <!-- About Me Section -->
+  <div class="px-10">
+    <div class="container mx-auto py-40 flex flex-col-reverse items-center lg:flex-row gap-20">
+      <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full">
+            <img class="rounded-full" src="./img/portrait.png" alt="" />
+          </div>
+        </div>
+      <!-- right -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-rose-600 font-bold">ABOUT ME</h1>
+        <h1 class="text-3xl font-medium">Better Design</h1>
+        <h1 class="text-3xl font-medium">Better Experience</h1>
+        <p class="text-gray-400">
+          I specialize in creating user-friendly and responsive designs that help businesses establish their online presence. 
+        </p>
+        <h2 class="text-gray-400 font-medium">MERN stack</h2>
+        <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-full bg-rose-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">ASP.NET Core</h2>
+         <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-4/6 bg-rose-600 h-1.5 rounded-md"></div>
+        </div>
+        <h2 class="text-gray-400 font-medium">Django</h2>
+         <div class="w-full bg-gray-200 h-1.5 rounded-md">
+          <div class="w-2/6 bg-rose-600 h-1.5 rounded-md"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- app.js -->
   <script src="./app.js"></script>
   <script src="./autotyping.js"></script>
