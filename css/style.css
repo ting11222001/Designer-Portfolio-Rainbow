@@ -634,10 +634,6 @@ video {
   z-index: 20;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -654,10 +650,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -1077,6 +1069,10 @@ video {
 
 :is(.dark .dark\:z-20) {
   z-index: 20;
+}
+
+:is(.dark .dark\:z-30) {
+  z-index: 30;
 }
 
 :is(.dark .dark\:block) {
