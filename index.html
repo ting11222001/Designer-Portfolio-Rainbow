@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;
+    0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   <title>Tailwind Portfolio</title>
 </head>
 
-<body class="font-nunito">
+<body class="font-nunito dark">
   <!-- Intro Section -->
   <!-- relative & overflow-hidden for the woman.png -->
-  <div id="homepage" class="h-1/2 lg:h-screen bg-gradient-to-t from-rose-200 relative overflow-hidden">
+  <div id="homepage" class="h-1/2 lg:h-screen bg-gradient-to-t from-rose-200
+   dark:from-slate-800 dark:to-slate-900  relative overflow-hidden">
     <!-- Navbar -->
-    <nav class="w-full fixed top-0 bg-white z-10">
+    <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
       <div class="container mx-auto py-5 flex justify-between items-center pr-2">
         <div class="flex items-center gap-2 pl-2">
-          <img class="w-8" src="./img/logo.png" alt="">
-          <span class="text-2xl font-bold text-slate-700">Codify.</span>
+          <img class="w-8 dark:hidden" src="./img/logo-dark.png" alt="">
+          <img class="w-8 dark:block" src="./img/logo-light.png" alt="">
+          <span class="text-2xl font-bold text-slate-700 dark:text-gray-100">Codify.</span>
         </div>
-        <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+        <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm 
+        uppercase dark:text-gray-100">
           <li class="hover:text-gray-400">
             <a href="#homepage">HOMEPAGE</a>
           </li>
@@ -38,7 +40,7 @@
             <a href="#contact">CONTACT</a>
           </li>
         </ul>
-        <img src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
+        <img id="moon" src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
         <!-- Hamburger Menu -->
         <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
           <div class="w-6 h-0.5 bg-black"></div>
@@ -47,7 +49,8 @@
         </div>
         <!-- Hamburger Menu Content -->
         <ul id="menu"
-          class="hidden bg-rose-500 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+          class="hidden bg-rose-500 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 
+          text-white text-center">
           <li id="hLink">
             <a href="#homepage">HOMEPAGE</a>
           </li>
@@ -69,30 +72,33 @@
 
     <!-- Intro Content -->
     <!-- Image -->
-    <img class="absolute right-0 bottom-0 h-5/6 object-cover lg:left-0 mx-auto" src="./img/woman.png" alt="">
+    <img class="absolute right-0 bottom-0 h-5/6 object-cover lg:left-0 mx-auto dark:z-20" src="./img/woman.png" alt="">
     <!-- Circle -->
-    <div class="hidden lg:block absolute -bottom-1/3 right-0 left-0 mx-auto w-big h-big bg-rose-900 rounded-full -z-10">
+    <div class="hidden lg:block absolute -bottom-1/3 right-0 left-0 mx-auto w-big h-big
+     bg-rose-900 dark:bg-rose-800 rounded-full -z-10 dark:z-10">
     </div>
     <!-- Animated text -->
     <div
-      class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 font-bold">
-      <span class="text-gray-600">Freelance</span>
+      class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl 
+      lg:left-5 xl:left-48 font-bold">
+      <span class="text-gray-600 dark:text-white">Freelance</span>
       <p id="developer-intro" class="text-rose-700"></p>
     </div>
     <!-- Intro Texts -->
-    <div
-      class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+    <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl dark:shadow-slate-900 
+      absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 p-6 h-fit w-1/3 dark:z-20">
       <h1 class="text-4xl font-bold text-rose-700">Hi, I'm Anna</h1>
       <p class="text-gray-400">
         With over 10 years of experience in web design, I'm a freelance web developer who loves creating beautiful and
         functional websites.
       </p>
-      <a class="bg-rose-700 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire Me</a>
+      <a class="bg-rose-700 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" 
+      href="#contact">Hire Me</a>
     </div>
   </div>
 
   <!-- About Me Section -->
-  <div id="about" class="px-10 pt-20">
+  <div id="about" class="px-10 pt-20 dark:bg-slate-900">
     <div class="container mx-auto flex flex-col-reverse items-center lg:flex-row gap-20">
       <!-- left -->
       <div class="relative">
@@ -104,8 +110,8 @@
       <!-- right -->
       <div class="my-auto flex flex-col gap-3">
         <h1 class="text-rose-600 font-bold">ABOUT ME</h1>
-        <h1 class="text-3xl font-medium">Better Design</h1>
-        <h1 class="text-3xl font-medium">Better Experience</h1>
+        <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+        <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
         <p class="text-gray-400">
           I specialize in creating user-friendly and responsive designs that help businesses establish their online
           presence.
@@ -127,24 +133,24 @@
   </div>
 
   <!-- Services Section -->
-  <div id="services" class="pt-20">
+  <div id="services" class="pt-20 dark:bg-slate-900">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
         <h1 class="text-rose-600 font-bold">SERVICES</h1>
-        <h1 class="text-3xl font-bold">What do I offer?</h1>
+        <h1 class="text-3xl font-bold text-white">What do I offer?</h1>
         <p class="text-gray-400 w-1/2 text-center">
-          Whether you need a simple landing page or a complex e-commerce platform, I'm here to turn your vision into
-          reality.
+          Whether you need a simple landing page or a complex e-commerce platform, I'm here to turn your vision into reality.
         </p>
       </div>
 
       <!-- bottom -->
-      <div class="grid md:grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-3 gap-4 p-5">
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">Easy-to-Use Design</h1>
+           <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">Easy-to-Use Design</h1>
           <p class="text-gray-400">
             I make websites that are easy and enjoyable for people to use, focusing on making everything clear and
             user-friendly.
@@ -153,8 +159,9 @@
         </div>
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">Works on Any Device</h1>
+          <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">Works on Any Device</h1>
           <p class="text-gray-400">
             Your website will look good and work well on phones, tablets, and computers, so everyone can easily access
             your content.
@@ -163,8 +170,9 @@
         </div>
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">Tell Your Story Visually</h1>
+          <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">Tell Your Story Visually</h1>
           <p class="text-gray-400">
             Using pictures and design, I help your website share your story in a way that's interesting and memorable.
           </p>
@@ -172,8 +180,9 @@
         </div>
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">See Before It's Built</h1>
+          <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">See Before It's Built</h1>
           <p class="text-gray-400">
             I create simple drawings and interactive examples of your website so you can see how it'll look and work
             even before we start building it.
@@ -183,8 +192,9 @@
 
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">Organized Information</h1>
+          <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">Organized Information</h1>
           <p class="text-gray-400">
             I arrange your website's content in a logical way so visitors can quickly find what they're looking for.
           </p>
@@ -193,8 +203,9 @@
 
         <!-- card -->
         <div class="w-full shadow-xl rounded-lg p-5 flex flex-col gap-3">
-          <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-medium text-lg">Loads Fast and Works Well</h1>
+          <img class="w-10 dark:hidden" src="./img/icon-dark.png" alt="">
+          <img class="w-10 dark:block" src="./img/icon-light.png" alt="">
+          <h1 class="font-medium text-lg dark:text-white">Loads Fast and Works Well</h1>
           <p class="text-gray-400">
             I make sure your website is fast and responsive, so visitors don't have to wait, and everything works
             smoothly.
@@ -206,12 +217,12 @@
   </div>
 
   <!-- Portfolio Section -->
-  <div id="works" class="pt-20">
+  <div id="works" class="pt-20 dark:bg-slate-900">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
         <h1 class="text-rose-600 font-bold">PORTFOLIO</h1>
-        <h1 class="text-3xl font-bold">Works & Projects</h1>
+        <h1 class="text-3xl font-bold dark:text-white">Works & Projects</h1>
         <p class="text-gray-400 w-1/2 text-center">
           You can explore a collection of my past projects and see how I bring ideas to life through web development.
         </p>
@@ -264,32 +275,37 @@
   </div>
 
   <!-- Contact -->
-  <div id="contact" class="pt-20">
+  <div id="contact" class="pt-20 flex dark:bg-slate-900">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
         <h1 class="text-rose-600 font-bold">CONTACT</h1>
-        <h1 class="text-3xl font-bold">Have a question?</h1>
+        <h1 class="text-3xl font-bold dark:text-white">Have a question?</h1>
         <p class="text-gray-400 w-1/2 text-center">
           Do you have an idea? Let's discuss it and see what we can do together.
         </p>
       </div>
       <!-- bottom -->
       <form class="mt-5 p-8 flex flex-col items-center gap-5" action="">
-        <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" type="text" placeholder="Name Surname">
-        <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" type="email" placeholder="Email">
-        <textarea class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" placeholder="Message..." cols="30"
-          rows="10"></textarea>
-        <button class="w-1/2 bg-rose-500 rounded-lg text-white font-medium px-3 py-2">Submit</button>
+        <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" 
+        type="text" placeholder="Name Surname">
+        <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" 
+        type="email" placeholder="Email">
+        <textarea class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" 
+        placeholder="Message..." cols="30" rows="10"></textarea>
+        <button class="w-1/2 bg-rose-500 rounded-lg text-white font-medium px-3 py-2">
+          Submit
+        </button>
       </form>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="w-full bg-gray-500">
+  <div class="w-full bg-gray-800 dark:bg-dark">
     <div class="container mx-auto py-5 flex items-center justify-between">
       <div class="flex items-center gap-2 pl-2">
-        <img class="w-8" src="./img/logo.png" alt="" />
+        <img class="w-8 dark:hidden" src="./img/logo-dark.png" alt="">
+        <img class="w-8 dark:block" src="./img/logo-light.png" alt="">
         <span class="text-2xl font-bold text-white">Codify.</span>
       </div>
       <span class="hidden md:block font-medium text-white">© 2024 Codify. Design with ♥️ by Li-Ting.</span>
