@@ -13,29 +13,29 @@
 <body class="font-nunito">
   <!-- Intro Section -->
   <!-- relative & overflow-hidden for the woman.png -->
-  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-rose-200 relative overflow-hidden">
+  <div id="homepage" class="h-1/2 lg:h-screen bg-gradient-to-t from-rose-200 relative overflow-hidden">
     <!-- Navbar -->
     <nav class="w-full fixed top-0 bg-white z-10">
       <div class="container mx-auto py-5 flex justify-between items-center pr-2">
         <div class="flex items-center gap-2 pl-2">
           <img class="w-8" src="./img/logo.png" alt="">
-          <span class="text-2xl font-bold text-slate-700">Portwind.</span>
+          <span class="text-2xl font-bold text-slate-700">Codify.</span>
         </div>
         <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
           <li class="hover:text-gray-400">
-            <a href="#">homepage</a>
+            <a href="#homepage">homepage</a>
           </li>
           <li class="hover:text-gray-400">
-            <a href="#">about me</a>
+            <a href="#about">about me</a>
           </li>
           <li class="hover:text-gray-400">
-            <a href="#">services</a>
+            <a href="#services">services</a>
           </li>
           <li class="hover:text-gray-400">
-            <a href="#">works</a>
+            <a href="#works">works</a>
           </li>
           <li class="hover:text-gray-400">
-            <a href="#">contact</a>
+            <a href="#contact">contact</a>
           </li>
         </ul>
         <img src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
@@ -49,19 +49,19 @@
         <ul id="menu"
           class="hidden bg-rose-500 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
           <li>
-            <a href="#">homepage</a>
+            <a href="#homepage">homepage</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">about me</a>
+            <a href="#about">about me</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">services</a>
+            <a href="#services">services</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">works</a>
+            <a href="#works">works</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">contact</a>
+            <a href="#contact">contact</a>
           </li>
         </ul>
       </div>
@@ -92,8 +92,8 @@
   </div>
 
   <!-- About Me Section -->
-  <div class="px-10">
-    <div class="container mx-auto py-40 flex flex-col-reverse items-center lg:flex-row gap-20">
+  <div id="about" class="px-10 pt-20">
+    <div class="container mx-auto flex flex-col-reverse items-center lg:flex-row gap-20">
       <!-- left -->
       <div class="relative">
         <img class="h-1/4 absolute top-0 left-0 -z-10" src="./img/dots.png" alt="" />
@@ -127,7 +127,7 @@
   </div>
 
   <!-- Services Section -->
-  <div>
+  <div id="services" class="pt-20">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
@@ -206,11 +206,11 @@
   </div>
 
   <!-- Portfolio Section -->
-  <div id="works" class="py-40">
+  <div id="works" class="pt-20">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
-        <h1 class="text-rose-600 font-bold">Portfolio</h1>
+        <h1 class="text-rose-600 font-bold">PORTFOLIO</h1>
         <h1 class="text-3xl font-bold">Works & Projects</h1>
         <p class="text-gray-400 w-1/2 text-center">
           You can explore a collection of my past projects and see how I bring ideas to life through web development.
@@ -264,11 +264,11 @@
   </div>
 
   <!-- Contact -->
-  <div>
+  <div id="contact" class="pt-20">
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
-        <h1 class="text-rose-600 font-bold">Contact</h1>
+        <h1 class="text-rose-600 font-bold">CONTACT</h1>
         <h1 class="text-3xl font-bold">Have a question?</h1>
         <p class="text-gray-400 w-1/2 text-center">
           Do you have an idea? Let's discuss it and see what we can do together.
@@ -278,12 +278,29 @@
       <form class="mt-5 p-8 flex flex-col items-center gap-5" action="">
         <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" type="text" placeholder="Name Surname">
         <input class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" type="email" placeholder="Email">
-        <textarea class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" placeholder="Message..." cols="30" rows="10"></textarea>
+        <textarea class="p-2 w-full md:w-1/2 ring-1 ring-rose-300 rounded-sm" placeholder="Message..." cols="30"
+          rows="10"></textarea>
         <button class="w-1/2 bg-rose-500 rounded-lg text-white font-medium px-3 py-2">Submit</button>
       </form>
     </div>
   </div>
 
+  <!-- Footer -->
+  <div class="w-full bg-gray-500">
+    <div class="container mx-auto py-5 flex items-center justify-between">
+      <div class="flex items-center gap-2 pl-2">
+        <img class="w-8" src="./img/logo.png" alt="" />
+        <span class="text-2xl font-bold text-white">Codify.</span>
+      </div>
+      <span class="hidden md:block font-medium text-white">© 2024 Codify. Design with ♥️ by Li-Ting.</span>
+      <div class="flex gap-2 pr-2">
+        <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+      </div>
+    </div>
+  </div>
   <!-- app.js -->
   <script src="./app.js"></script>
   <script src="./autotyping.js"></script>
